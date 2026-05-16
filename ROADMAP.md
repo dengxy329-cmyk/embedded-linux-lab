@@ -13,11 +13,13 @@
 
 - 这是你的**学习宪章**——大方向迷茫时回来看
 - 进度看板：每完成一个 M 阶段，在 §11 表格里勾选
-- 老笔记在 `legacy-textbook-structure` 分支；新结构在 `main`
+- 仓库分支策略：单 `main` 分支干到底，不再细分 stage 分支；想尝试不确定的笔记结构再临时拉 `experimental/*`
 
 ### 给协助的 AI 模型（接续上下文用）
 
-请先通读本文档，重点理解：
+**先读** `AGENTS.md`（仓库根目录的快速指令）和 `STYLE.md`（笔记风格手册），再读本文档。
+
+通读本文档，重点理解：
 
 1. §1 学习者画像——他不是初学者，是有教科书基础但跨不到工程实践的人
 2. §3-§4 路线——按"能力"分阶段，不按"知识章节"分阶段
@@ -79,8 +81,8 @@
 
 ### 软件环境
 
-- 主机：Windows + WSL2（应用层用）
-- 开发：Ubuntu 22.04 VM（VirtualBox，驱动主战场，4 核 / 8 GB / 100 GB）
+- 主机：Windows 
+- 开发：Ubuntu 18/20.04 VM（VMware Workstation，驱动主战场，4 核 / 8 GB / 100 GB）
 - IDE：VSCode / Cursor + clangd
 - 已装：git、gcc、build-essential
 - 待装（M1）：Bootlin aarch64 toolchain、NFS 服务、minicom/picocom、ctags、cscope
@@ -392,6 +394,7 @@ linux-kernel-learning/                  ← main 分支
 │   └── sysfs-debugfs.md
 │
 ├── 30-reading-drills/                  ← ⭐⭐⭐ M2 主战场
+│   ├── templates/                      ← case 笔记 6 件套空白模板
 │   ├── case-01-gpio-rockchip/
 │   ├── case-02-i2c-rk3x/
 │   ├── case-03-iio-bmi160/
@@ -407,6 +410,7 @@ linux-kernel-learning/                  ← main 分支
 │   └── ...
 │
 ├── 50-subsystems/                      ← M5：按需点亮
+│   ├── templates/                      ← 子系统笔记 5 件套空白模板
 │   ├── gpio/
 │   ├── pinctrl/
 │   ├── clk-and-power/
@@ -416,6 +420,7 @@ linux-kernel-learning/                  ← main 分支
 │   ├── drm-display/
 │   ├── dma-buf/                        ← AI 内存核心
 │   ├── iommu/
+│   ├── remoteproc/                     ← Hexagon DSP/MCU 启动（QCS 路线必备）
 │   ├── rknpu-research/                 ← 闭源逆向笔记
 │   └── qcom-hexagon-research/
 │
@@ -708,6 +713,7 @@ perf              性能采样
 | 版本 | 日期 | 修订内容 |
 |------|------|---------|
 | v1.0 | 2026-05-16 | 初版，定下 M1-M7 路线和方法论 |
+| v1.1 | 2026-05-16 | §0 加 AGENTS.md/STYLE.md 引用；§6 加 `30-reading-drills/templates/`、`50-subsystems/templates/`、`50-subsystems/remoteproc/`（QCS8300 项目必备） |
 
 ---
 

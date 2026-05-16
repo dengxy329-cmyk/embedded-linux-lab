@@ -1,0 +1,38 @@
+# 全部文本文件用 LF 行尾（避免 Windows 主机产生 CRLF）
+* text=auto eol=lf
+
+# Markdown 笔记
+*.md       text eol=lf
+*.txt      text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+*.json     text eol=lf
+
+# 内核代码 / patch
+*.c        text eol=lf
+*.h        text eol=lf
+*.S        text eol=lf
+*.dts      text eol=lf
+*.dtsi     text eol=lf
+*.patch    text eol=lf
+*.sh       text eol=lf
+*.py       text eol=lf
+
+# Makefile / Kbuild / Kconfig
+Makefile   text eol=lf
+Kbuild     text eol=lf
+Kconfig*   text eol=lf
+*.mk       text eol=lf
+
+# 二进制（不要 LF 转换）
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.pdf      binary
+*.gz       binary
+*.tar      binary
+*.bin      binary
+*.img      binary
+*.dtb      binary
+*.ko       binary
