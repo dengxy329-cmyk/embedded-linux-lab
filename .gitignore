@@ -1,0 +1,104 @@
+# ============ 内核 / 模块编译产物 ============
+*.o
+*.o.*
+*.ko
+*.ko.*
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+*.symvers
+*.order
+*.builtin
+*.dwo
+*.gcno
+*.gcda
+
+# ============ 内核编译临时目录 ============
+.tmp_versions/
+modules.order
+Module.symvers
+Module.markers
+.config
+.config.old
+.config.tmp
+.version
+.scmversion
+.tmp_objdiff
+.cache.mk
+.fixdep
+include/config/
+include/generated/
+include/ksym/
+include/linux/version.h
+include/generated/autoconf.h
+
+# ============ U-Boot / Bootloader ============
+u-boot.bin
+u-boot.img
+u-boot-dtb.img
+spl/
+tpl/
+*.dtb
+*.dtbo
+
+# ============ 镜像 / 根文件系统 ============
+*.img
+*.bin
+*.iso
+*.tar
+*.tar.gz
+*.tar.xz
+*.cpio
+*.cpio.gz
+Image
+zImage
+vmlinux*
+rootfs.*
+
+# ============ Buildroot / Yocto 输出 ============
+output/
+build/
+tmp/
+sstate-cache/
+downloads/
+
+# ============ 工具 / IDE ============
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+*.sublime-*
+tags
+TAGS
+cscope.*
+GPATH
+GRTAGS
+GTAGS
+compile_commands.json
+.clangd/
+.cache/
+*.code-workspace
+
+# ============ Python / 脚本临时 ============
+__pycache__/
+*.pyc
+*.pyo
+
+# ============ patch 工作目录 ============
+*.patch.bak
+*.rej
+*.orig
+*.diff.bak
+
+# ============ 我们仓库特有 ============
+# 编译生成的可执行（小测试程序）
+**/practice/*/a.out
+**/practice/*/test_*
+**/practice/*/*.elf
+
+# 个人草稿（自己临时记的东西，别推上去）
+scratch/
+TODO-personal.md
